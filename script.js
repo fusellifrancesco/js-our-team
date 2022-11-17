@@ -31,17 +31,21 @@ let arrayMembriTeam = [
     },
 ]
 
-stampaElementiArray(arrayMembriTeam);
+stampaArrayConsole(arrayMembriTeam);
+
+stampaArrayDom(arrayMembriTeam);
 
 
 
 
-
-
-
-
-function stampaElementiArray(array){
+function stampaArrayConsole(array){
     for (let i = 0; i < array.length; i++){
         console.log(array[i])
+    }
+}
+
+function stampaArrayDom (array){
+    for (let i = 0; i < array.length; i++){
+        document.getElementById("membri-team").innerHTML += "<p>" + array[i].nome + "<br>" + array[i].ruolo + "<br>" + array[i].foto + "</p>";
     }
 }
