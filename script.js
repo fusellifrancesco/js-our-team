@@ -30,3 +30,18 @@ let arrayMembriTeam = [
         foto: "barbara-ramos-graphic-designer.jpg",
     },
 ]
+
+stampaElementiArray(arrayMembriTeam);
+
+
+
+
+
+
+
+
+function stampaElementiArray(array){
+    for (let i = 0; i < array.length; i++){
+        console.log(array[i])
+    }
+}
